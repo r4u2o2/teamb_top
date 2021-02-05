@@ -20,8 +20,9 @@ p{
     font-weight: 400;
     font-style: normal;
 }
-.member-block section{
+.member-block a{
     width: 33.333%;
+    filter: grayscale(100%);
     display: flex;
     position: relative;
 }
@@ -29,6 +30,7 @@ h3{
     font-family: pt-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #393939;
     font-size: 3.3vw;
     letter-spacing: 0.05em;
     text-align: right;
@@ -43,10 +45,7 @@ h3{
     width: 100%;
 }
 
-.member-block section{
-    filter: grayscale(100%);
-}
-.member-block section:hover{
+.member-block a:hover{
     filter: grayscale(0);
 }
 
@@ -55,17 +54,17 @@ h3{
 ------------------------------- */
 @keyframes line {
     0% {
-      -webkit-transform: translate3d(-50%, 0, 0);
-      transform: translate3d(-50%, 0, 0);
-    }
-    60% {
-      -webkit-transform: translate3d(-50%, 100px, 0);
-      transform: translate3d(-50%, 117px, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(-50%, 100px, 0);
-      transform: translate3d(-50%, 117px, 0);
-    }
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      60% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
 }
 
 
@@ -76,10 +75,15 @@ h3{
 header{
     width: 100vw;
     height: 100vh;
-    background: url() no-repeat center center;
-    background-color: gray;
+    background: url(../img/textile02_top_gray.png) no-repeat center center;
+    background-size: cover;
+    background-color: #f8f8f8;
     position: relative;
     margin: 0 0 168px 0;
+    filter: grayscale(100%);
+}
+header:hover{
+    filter: grayscale(0);
 }
 header h1{
     width: 126px;
