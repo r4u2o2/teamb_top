@@ -38,9 +38,9 @@ h3{
     right: 7.812%;
     bottom: 9.737%;
 }
-.member-block figure{
+/* .member-block figure{
     width: 80%;
-}
+} */
 .member-block img{
     width: 100%;
 }
@@ -112,7 +112,6 @@ header img{
 .line{
     width: 1px;
     height: 117px;
-    /* background-color: #393939; */
     position: absolute;
     left: 0;
     right: 0;
@@ -158,6 +157,16 @@ h2{
 .member-box3{
     background-color: #D5AFAF;
 }
+.iitsuka{
+    width: 100%;
+}
+.ichinomiya{
+    width: 80%;
+}
+.okuma{
+    width: 80%;
+}
+
 
 
 
