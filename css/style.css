@@ -227,6 +227,10 @@ footer p{
     .member-block a{
         width: 100%;
     }
+    .member-block a:hover{
+        filter: grayscale(0);
+        box-shadow: 0px 0px 0px gray;
+    }
     h3{
         font-size: 30px;
     }
