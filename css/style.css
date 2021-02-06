@@ -23,9 +23,21 @@ p{
 .member-block a{
     width: 33.333%;
     filter: grayscale(100%);
+    box-shadow: 0px 0px 0px gray;
     display: flex;
     position: relative;
+    /* トランジション */
+    transition-property: filter,box-shadow;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    
 }
+.member-block a:hover{
+    filter: grayscale(0);
+    box-shadow: 0px 7px 30px gray;
+}
+
 h3{
     font-family: pt-sans, sans-serif;
     font-weight: 700;
@@ -42,13 +54,18 @@ h3{
     width: 100%;
 }
 
-.member-block a:hover{
-    filter: grayscale(0);
-}
-
 
 /* animation
 ------------------------------- */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes line {
     0% {
         -webkit-transform: translate3d(0, 0, 0);
@@ -78,6 +95,19 @@ header{
     position: relative;
     margin: 0 0 168px 0;
     filter: grayscale(100%);
+    /* トランジション */
+    transition-property: filter;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    /* アニメーション */
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 header:hover{
     filter: grayscale(0);
@@ -90,6 +120,14 @@ header h1{
     right: 0;
     bottom: 0;
     margin: auto;
+    /* アニメーション */
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 header img{
     width: 100%;
@@ -107,7 +145,7 @@ header img{
     margin: auto;
 }
 .line{
-    width: 1px;
+    width: 2px;
     height: 117px;
     position: absolute;
     left: 0;
@@ -120,16 +158,16 @@ header img{
 
 .line::before {
     content: '';
-    width: 1px;
+    width: 2px;
     height: 117px;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0px;
     margin: 0 auto 0 auto;
-    background-color: #eee;
-    -webkit-animation: line 2.5s ease 0s infinite normal;
-    animation: line 2.5s ease 0s infinite normal;
+    background-color: #ffffff;
+    -webkit-animation: line 2.3s ease 0s infinite normal;
+    animation: line 2.3s ease 0s infinite normal;
   }
   
 
@@ -155,13 +193,13 @@ h2{
     background-color: #D5AFAF;
 }
 .iitsuka{
-    width: 100%;
+    width: 80%;
 }
 .ichinomiya{
-    width: 80%;
+    width: 60%;
 }
 .okuma{
-    width: 80%;
+    width: 60%;
 }
 
 
