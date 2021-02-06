@@ -217,6 +217,8 @@ footer p{
 @media(max-width: 750px){
     header{
         margin: 0 0 80px 0;
+        background: url(../img/textile02_top_gray_sp.png) no-repeat center center;
+        background-size: cover;
     }
     .member-block{
         display: block;
