@@ -237,6 +237,17 @@ footer p{
     h3{
         font-size: 30px;
     }
+    .iitsuka{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .ichinomiya{
+        width: 60%;
+    }
+    .okuma{
+        width: 60%;
+        margin-bottom: 30px;
+    }
 }
 @media(min-width: 1200px){
     h2{
